@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <title>Michel Saad Front-End Developer</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Where is the ISS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Michel Saad - Front-End Developer</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+  </style>
+  
+</head>
+
+<body>
+  <div class="main-nav">
+    <div class="nav-container">
+      <h2>Gdzie jest Międzynarodowa Stacja kosmiczna ISS?</h2>
+    </div>
+  </div>
+    <div class="container">
+    <!-- Mapa Google -->
+     <div class="googleMap">
+      <h3>Geograficzne położenie stacji ISS</h3>
+      <div id="map"></div>
+    </div>
+    <!-- Koniec Mapy Google -->
+    <p>Wysokość geograficzna: <span id="latitude"></p>
+    <p>Szerokość geograficzna: <span id="longitude"></p>
+    <p>Stacja kosmiczna ISS znajduje sie obecnie nad: <span id="ISSLocation"></span></p>
+  </div>
+  <div class="footer">
+  <p>Made by: Michel Saad 2017</p>
+  </div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByXvkrZZSCce0Evurv3yY-ZQnWYmLkWVk&language=pl&region=PL"">
+  </script>
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
